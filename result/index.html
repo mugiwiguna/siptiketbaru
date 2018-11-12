@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- MUGIJAE WAS HERE -->
+<html>
+
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/result.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- <script src="js/popper.min.js"  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 header">
+                    <div class="row">
+                        <div class="col-1 headleft">
+                            <div class="hamburger"></div>
+                            <div class="hamburger"></div>
+                            <div class="hamburger no-margin"></div>
+                        </div>
+                        <div class="col-3 logo">
+                            <div class="logocapt">SIPTIKET</div>
+                        </div>
+                        <div class="col-3 bar">
+                            <div class="sw-square">
+                                <div class="w-square">
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                </div>
+                                <div class="clear-fix"></div>
+                                <div class="w-square">
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                </div>
+                                <div class="clear-fix"></div>
+                                <div class="w-square">
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                    <div class="square"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 signin">
+                            <div class="signcapt">Sign In</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="select-trip">
+		<div class="container">
+			<div class="row">
+				<div class="dropdown">
+					<!-- <a href="#pop1"> -->
+					<button onclick="window.location.href='#pop1'" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+					 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						Round Trip
+					</button>
+					<!-- </a> -->
+					<div id="pop1" class="overlay" aria-labelledby="dropdownMenuButton">
+						<div class="popup">
+							<a class="dropdown-item" href="#">Round Trip</a>
+							<a class="dropdown-item" href="#">One-Way</a>
+							<a class="dropdown-item" href="#">Multi-City</a>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button onclick="window.location.href='#pop2'" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+					 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						Passenger
+					</button>
+					<div id="pop2" class="overlay" aria-labelledby="dropdownMenuButton">
+						<div class="popup2">
+							<div class="row">
+								<div class="col-6 pass" >Adults</div>
+								<div class="col-2 left" >-</div>
+								<div class="col-2 center" >1</div>
+								<div class="col-2 right" >+</div>
+							</div>
+							<div class="row child">
+								<div class="col-6 pass" >Child</div>
+								<div class="col-2 left" >-</div>
+								<div class="col-2 center" >1</div>
+								<div class="col-2 right" >+</div>
+							</div>
+							<div class="row child">
+								<div class="col-6 pass" >Infant</div>
+								<div class="col-2 left" >-</div>
+								<div class="col-2 center" >0</div>
+								<div class="col-2 right" >+</div>
+							</div>
+							<div class="row child">
+								<div class="col-4 nopadding"></div>
+								<div class="col-5 nopadding cancel"><a href="#">Cancel</a></div>
+								<div class="col-3 nopadding done"><a href="#">Done</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="true">
+						Economy
+					</button>
+				</div>
+			</div>
+			<div class="row select-input">
+				<div class="wrapper-select row">
+					<input id="from" class="from" type="text" placeholder="Jakarta (CGK)" />
+					<div class="buletan"></div>
+					<input id="to" class="to" type="text" placeholder="Denpasar (DPS)" />
+					<input class="from-date" type="text" />
+					<div class="divider">
+						<div class="dividerin"></div>
+					</div>
+					<input class="to-date" type="text" />
+				</div>
+			</div>
+			
+		</div>
+	</section>
+</body>
+
+</html>

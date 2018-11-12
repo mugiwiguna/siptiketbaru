@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- MUGIJAE WAS HERE -->
+<html>
+
+<head>
+	<title>Beranda</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+	 rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/popper.min.js"  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script> -->
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+	 rel="stylesheet">
+</head>
+
+<body id="body">
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 header">
+					<div class="row">
+						<div class="col-1 headleft">
+							<div class="hamburger"></div>
+							<div class="hamburger"></div>
+							<div class="hamburger no-margin"></div>
+						</div>
+						<div class="col-3 logo">
+							<div class="logocapt">SIPTIKET</div>
+						</div>
+						<div class="col-3 bar">
+							<div class="sw-square">
+								<div class="w-square">
+									<div class="square"></div>
+									<div class="square"></div>
+									<div class="square"></div>
+								</div>
+								<div class="clear-fix"></div>
+								<div class="w-square">
+									<div class="square"></div>
+									<div class="square"></div>
+									<div class="square"></div>
+								</div>
+								<div class="clear-fix"></div>
+								<div class="w-square">
+									<div class="square"></div>
+									<div class="square"></div>
+									<div class="square"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-1 signin">
+							<div class="signcapt">Sign In</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="background">
+		<div class="bgnya"></div>
+	</section>
+	<section class="select-trip">
+		<div class="container">
+			<div class="row">
+				<div class="dropdown">
+					<!-- <a href="#pop1"> -->
+					<button onclick="pop()" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="true">
+						Round Trip
+					</button>
+					<!-- </a> -->
+					<div id="pop1" class="overlay" aria-labelledby="dropdownMenuButton">
+						<div class="popup">
+							<a class="dropdown-item" onclick="unpop()" href="#">Round Trip</a>
+							<a class="dropdown-item" onclick="unpop()" href="#">One-Way</a>
+							<a class="dropdown-item" onclick="unpop()" href="#">Multi-City</a>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button onclick="pop2()" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+					 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+						Passenger
+					</button>
+					<div id="pop2" class="overlay" aria-labelledby="dropdownMenuButton">
+						<div class="popup2">
+							<div class="row">
+								<div class="col-6 pass">Adults</div>
+								<div class="col-2 left">-</div>
+								<div class="col-2 center">1</div>
+								<div class="col-2 right">+</div>
+							</div>
+							<div class="row child">
+								<div class="col-6 pass">Child</div>
+								<div class="col-2 left">-</div>
+								<div class="col-2 center">1</div>
+								<div class="col-2 right">+</div>
+							</div>
+							<div class="row child">
+								<div class="col-6 pass">Infant</div>
+								<div class="col-2 left">-</div>
+								<div class="col-2 center">0</div>
+								<div class="col-2 right">+</div>
+							</div>
+							<div class="row child">
+								<div class="col-4 nopadding"></div>
+								<div onclick="unpop()" class="col-5 nopadding cancel"><a href="#">Cancel</a></div>
+								<div onclick="unpop()" class="col-3 nopadding done"><a href="#">Done</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+					 aria-haspopup="true" aria-expanded="true">
+						Economy
+					</button>
+				</div>
+			</div>
+			<div class="row select-input">
+				<div class="wrapper-select row">
+					<input id="from" class="from" type="text" placeholder="Jakarta (CGK)" />
+					<div class="buletan"></div>
+					<input id="to" class="to" type="text" placeholder="Denpasar (DPS)" />
+					<input class="from-date" type="text" />
+					<div class="divider">
+						<div class="dividerin"></div>
+					</div>
+					<input class="to-date" type="text" />
+				</div>
+			</div>
+			<div class="row" onclick="window.location.href='result/index.html'">
+				<div class="search">
+					<div class="row">
+						<div class="mag"></div>
+						<div class="magcapt">PENCARIAN</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="flight">
+		<div class="row rowdata">
+			<div class="col-6 kiri img1">
+				<div class="content-flight">
+					<a class="content-tittle">Denpasar</a><br>
+					<a class="content-date">Thu, Feb 21 – Fri, Mar 1</a><br>
+					<a class="content-trip">Nonstop</a><a class="content-trip">1h 45m</a><br>
+					<a class="content-fare">IDR 1,200,900</a>
+				</div>
+			</div>
+			<div class="col-6 kanan img1">
+				<div class="content-flight">
+					<a class="content-tittle">Denpasar</a><br>
+					<a class="content-date">Thu, Feb 21 – Fri, Mar 1</a><br>
+					<a class="content-trip">Nonstop</a><a class="content-trip">1h 45m</a><br>
+					<a class="content-fare">IDR 1,200,900</a>
+				</div>
+			</div>
+		</div>
+		<div class="row rowdata">
+			<div class="col-6 kiri img1">
+				<div class="content-flight">
+					<a class="content-tittle">Denpasar</a><br>
+					<a class="content-date">Thu, Feb 21 – Fri, Mar 1</a><br>
+					<a class="content-trip">Nonstop</a><a class="content-trip">1h 45m</a><br>
+					<a class="content-fare">IDR 1,200,900</a>
+				</div>
+			</div>
+			<div class="col-6 kanan img1">
+				<div class="content-flight">
+					<a class="content-tittle">Denpasar</a><br>
+					<a class="content-date">Thu, Feb 21 – Fri, Mar 1</a><br>
+					<a class="content-trip">Nonstop</a><a class="content-trip">1h 45m</a><br>
+					<a class="content-fare">IDR 1,200,900</a>
+				</div>
+			</div>
+		</div>
+		<div class="row rowdata">
+			<div class="col-6 kiri img1">
+				<div class="content-flight">
+					<a class="content-tittle">Denpasar</a><br>
+					<a class="content-date">Thu, Feb 21 – Fri, Mar 1</a><br>
+					<a class="content-trip">Nonstop</a><a class="content-trip">1h 45m</a><br>
+					<a class="content-fare">IDR 1,200,900</a>
+				</div>
+			</div>
+			<div class="col-6 kanan img1">
+				<div class="content-flight">
+					<a class="content-tittle">Denpasar</a><br>
+					<a class="content-date">Thu, Feb 21 – Fri, Mar 1</a><br>
+					<a class="content-trip">Nonstop</a><a class="content-trip">1h 45m</a><br>
+					<a class="content-fare">IDR 1,200,900</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="row wrapper-foot">
+			<div class="col-3 wrapper-foot-content cl">
+				<div class="foot-content ">
+					<div class="content-head ">
+						<div class="row">
+							<i class="icon-foot fas fa-globe-asia col-12"></i>
+							<a>RESERVASI ONLINE</a>
+						</div>
+					</div>
+					<div class="foot-par">
+						<div class="row">
+							<a>Booking dan ticketing di sistem kami terintegrasi dengan pihak resmi maskapai-maskapai di Indonesia.</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3 wrapper-foot-content">
+				<div class="foot-content">
+					<div class="content-head ">
+						<div class="row">
+							<i class="icon-foot fas fa-user col-12"></i>
+							<a>USER EXPERIENCE</a>
+						</div>
+					</div>
+					<div class="foot-par">
+						<div class="row">
+							<a>Sistem yang mudah dan efisien hanya membutuhkan beberapa langkah untuk melakukan reservasi dan ticketing.</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3 wrapper-foot-content">
+				<div class="foot-content">
+					<div class="content-head ">
+						<div class="row">
+							<i class="icon-foot fas fa-heart col-12"></i>
+							<a>DISCOUNT AND PROMO</a>
+						</div>
+					</div>
+					<div class="foot-par">
+						<div class="row">
+							<a>Dapatkan promo harga tiket penerbangan untuk berbagai rute dan maskapai pilihan yang kami tawarkan.</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-3 wrapper-foot-content cr">
+				<div class="foot-content ">
+					<div class="content-head ">
+						<div class="row">
+							<i class="icon-foot fas fa-check-circle col-12"></i>
+							<a>HIGH RELIABILITY</a>
+						</div>
+					</div>
+					<div class="foot-par">
+						<div class="row">
+							<a>Kami selalu berusaha memenuhi kebutuhan Anda dengan layanan yang HANDAL, EFISIEN dan AMAN.</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div>&copy; Powered By Versa Technology</div>
+	</footer>
+</body>
+<script type="text/javascript">
+	// $(document).ready(function () {
+	// 	// $("#from").addClass("animationfrom");
+	// 	// $("#to").addClass("animationto");
+
+	// });
+	function pop() {
+		window.location.href = '#pop1';
+		$("#body").addClass("noscroll")
+	}
+	function pop2() {
+		window.location.href='#pop2';
+		$("#body").addClass("noscroll")
+	}
+	function unpop() {
+		$("#body").removeClass("noscroll")
+	}
+</script>
+
+</html>
